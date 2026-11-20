@@ -1,0 +1,31 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.spec
+
+# Build and distribution directories
+build/
+dist/
+
+# Model binaries and large caches
+models/
+*.bin
+*.pt
+
+# Local data, recordings and generated transcripts
+gravacoes/
+transcricoes/
+lixeira/
+logs/
+data/
+temp/
+
+# Environment, IDE and temporary files
+.venv/
+venv/
+env/
+.idea/
+.vscode/
+.gemini/
+*.tmp
