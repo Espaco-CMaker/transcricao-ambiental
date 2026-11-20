@@ -1,7 +1,15 @@
 # Transcrição Ambiental de Sala: Aplicação Desktop 100% Local (Sem Servidor)
-> Versão do Projeto: `v1.0.44` | Atualizado em: 20/11/2026
+> Versão do Projeto: `v1.0.45` | Atualizado em: 20/11/2026
 
-Aplicação em Python **100% Desktop nativa e local, operando totalmente sem servidor**, sem portas de rede e sem navegador web. Desenvolvida com CustomTkinter, SoundDevice, SoundFile, Faster-Whisper e Pygame para gravação contínua do áudio de uma sala durante o dia todo, geração automática de transcrições em arquivos Markdown (.md), reprodução sonora local e editor de texto. Na versão **`v1.0.44`**, o sistema implementa: **publicação no GitHub e disponibilização de área de download (releases)**:
+[![GitHub Release](https://img.shields.io/github/v/release/Espaco-CMaker/transcricao-ambiental?color=38bdf8&label=Release&logo=github)](https://github.com/Espaco-CMaker/transcricao-ambiental/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/Espaco-CMaker/transcricao-ambiental/total?color=10b981&label=Downloads&logo=github)](https://github.com/Espaco-CMaker/transcricao-ambiental/releases)
+[![Python Version](https://img.shields.io/badge/Python-3.10%2B-3776ab?logo=python&logoColor=white)](https://www.python.org/)
+[![Plataforma](https://img.shields.io/badge/Platform-Windows%20x64-0078d4?logo=windows&logoColor=white)](https://github.com/Espaco-CMaker/transcricao-ambiental/releases)
+[![Arquitetura](https://img.shields.io/badge/Architecture-100%25%20Local%20%7C%20Offline-f59e0b)](https://github.com/Espaco-CMaker/transcricao-ambiental)
+[![Licença MIT](https://img.shields.io/badge/License-MIT-emerald.svg)](LICENSE)
+
+Aplicação em Python **100% Desktop nativa e local, operando totalmente sem servidor**, sem portas de rede e sem navegador web. Desenvolvida com CustomTkinter, SoundDevice, SoundFile, Faster-Whisper e Pygame para gravação contínua do áudio de uma sala durante o dia todo, geração automática de transcrições em arquivos Markdown (.md), reprodução sonora local e editor de texto. Na versão **`v1.0.45`**, o sistema implementa: **badges de status, galeria visual de interface e licença open source no repositório GitHub**:
+- **Badges, Demonstração Visual e Licença (`v1.0.45`):** Adição de badges dinâmicos de release, downloads, arquitetura offline e licença MIT no topo do repositório. Criação do diretório `assets/screenshots/` com capturas da tela principal, editor de transcrições e osciloscópio acústico ao vivo, além da inclusão do arquivo de licença `LICENSE`.
 - **Repositório GitHub e Área de Releases para Download (`v1.0.44`):** Publicação oficial do código-fonte e documentação no repositório GitHub [Espaco-CMaker/transcricao-ambiental](https://github.com/Espaco-CMaker/transcricao-ambiental). Criação da Release oficial com área de download para o pacote executável portátil autossuficiente `TranscricaoAmbiental_Portatil.zip` (341.8 MB), acompanhado dos scripts de automação [scripts/publish_release.py](file:///e:/IAGenMaster/2026/CMaker/Projetos/11-TranscricaoAmbiental/scripts/publish_release.py) e [scripts/push_github.bat](file:///e:/IAGenMaster/2026/CMaker/Projetos/11-TranscricaoAmbiental/scripts/push_github.bat).
 - **Documento Canônico de Preenchimento do Hub de Projetos (`v1.0.43`):** Elaboração de guia completo em [EmDesenvolvimento/formulario_hub_projetos_v1.0.0.md](file:///e:/IAGenMaster/2026/CMaker/Projetos/11-TranscricaoAmbiental/EmDesenvolvimento/formulario_hub_projetos_v1.0.0.md) mapeando 100% dos campos do formulário administrativo (`admin/projetos/novo`) do Hub de Projetos CMaker (`https://cmaker.com.br/projetos/hub/`). Inclui textos prontos para cópia com resumo executivo de 198 caracteres, descrição aprofundada da solução e metodologia maker, equipe, marcos cronológicos, tags, tecnologias, diretrizes de fotos e parecer técnico de maturidade com nota 10.0.
 - **Botão Único de Transcrição Contextual (`v1.0.42`):** Remoção do botão redundante `⚡ Transcrever em Lote`. A barra de ferramentas agora conta exclusivamente com o botão **`⚡ Transcrever`**, que atua de forma direta sobre os itens selecionados na lista:
@@ -31,6 +39,18 @@ Aplicação em Python **100% Desktop nativa e local, operando totalmente sem ser
 - **Local em Branco na Ausência de Certeza (`v1.0.25`):** Preserva a integridade documental mantendo o campo de local estritamente em branco caso não haja confirmação verbal inequívoca.
 - **Nomenclatura Obrigatória Iniciada por `ATA_` (`v1.0.24`):** Arquivos de ata com prefixo oficial `ATA_AAAA-MM-DD_HH-MM-SS_Titulo.md`.
 - **Motor Completo em Lote (`v1.0.23`):** Suporte a processamento em fila com seleção estendida e atalho `Ctrl + A`.
+
+---
+
+## 📸 Demonstração da Interface
+
+| Tela Principal (Gravação de Áudio e Osciloscópio) |
+| :---: |
+| ![Interface Principal](assets/screenshots/tela_principal.png) |
+
+| Editor Integrado e Transcrições (.md) | Osciloscópio Acústico ao Vivo |
+| :---: | :---: |
+| ![Editor e Transcrições](assets/screenshots/editor_transcricoes.png) | ![Osciloscópio de Som](assets/screenshots/osciloscopio_audio.png) |
 
 ---
 
@@ -539,9 +559,12 @@ A aplicação possui distribuição autossuficiente (standalone) com o modelo Wh
 ```
 11-TranscricaoAmbiental/
 ├── .gitignore                 # Arquivo de exclusão de artefatos temporários e binários pesados
-├── README_IA.md               # Contexto executivo para agentes de IA (v1.0.44)
-├── README.md                  # Documentação completa para humanos (v1.0.44)
+├── LICENSE                    # Licença MIT do software livre
+├── README_IA.md               # Contexto executivo para agentes de IA (v1.0.45)
+├── README.md                  # Documentação completa para humanos (v1.0.45)
 ├── iniciar_sistema.bat        # Atalho direto para abrir via Python
+├── assets/                    # Imagens e capturas de tela para documentação
+│   └── screenshots/           # Prints da interface gráfica e osciloscópio
 ├── dist/                      # Pasta contendo o executável compilado
 │   ├── TranscricaoAmbiental_Portatil.zip # Pacote ZIP completo para outro PC (341.8 MB)
 │   └── TranscricaoAmbiental/  # Pasta autossuficiente com o .exe
