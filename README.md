@@ -1,7 +1,8 @@
 # Transcrição Ambiental de Sala: Aplicação Desktop 100% Local (Sem Servidor)
-> Versão do Projeto: `v1.0.43` | Atualizado em: 20/11/2026
+> Versão do Projeto: `v1.0.44` | Atualizado em: 20/11/2026
 
-Aplicação em Python **100% Desktop nativa e local, operando totalmente sem servidor**, sem portas de rede e sem navegador web. Desenvolvida com CustomTkinter, SoundDevice, SoundFile, Faster-Whisper e Pygame para gravação contínua do áudio de uma sala durante o dia todo, geração automática de transcrições em arquivos Markdown (.md), reprodução sonora local e editor de texto. Na versão **`v1.0.43`**, o sistema implementa: **documentação canônica de cadastro no Hub de Projetos CMaker**:
+Aplicação em Python **100% Desktop nativa e local, operando totalmente sem servidor**, sem portas de rede e sem navegador web. Desenvolvida com CustomTkinter, SoundDevice, SoundFile, Faster-Whisper e Pygame para gravação contínua do áudio de uma sala durante o dia todo, geração automática de transcrições em arquivos Markdown (.md), reprodução sonora local e editor de texto. Na versão **`v1.0.44`**, o sistema implementa: **publicação no GitHub e disponibilização de área de download (releases)**:
+- **Repositório GitHub e Área de Releases para Download (`v1.0.44`):** Publicação oficial do código-fonte e documentação no repositório GitHub [Espaco-CMaker/transcricao-ambiental](https://github.com/Espaco-CMaker/transcricao-ambiental). Criação da Release oficial com área de download para o pacote executável portátil autossuficiente `TranscricaoAmbiental_Portatil.zip` (341.8 MB), acompanhado dos scripts de automação [scripts/publish_release.py](file:///e:/IAGenMaster/2026/CMaker/Projetos/11-TranscricaoAmbiental/scripts/publish_release.py) e [scripts/push_github.bat](file:///e:/IAGenMaster/2026/CMaker/Projetos/11-TranscricaoAmbiental/scripts/push_github.bat).
 - **Documento Canônico de Preenchimento do Hub de Projetos (`v1.0.43`):** Elaboração de guia completo em [EmDesenvolvimento/formulario_hub_projetos_v1.0.0.md](file:///e:/IAGenMaster/2026/CMaker/Projetos/11-TranscricaoAmbiental/EmDesenvolvimento/formulario_hub_projetos_v1.0.0.md) mapeando 100% dos campos do formulário administrativo (`admin/projetos/novo`) do Hub de Projetos CMaker (`https://cmaker.com.br/projetos/hub/`). Inclui textos prontos para cópia com resumo executivo de 198 caracteres, descrição aprofundada da solução e metodologia maker, equipe, marcos cronológicos, tags, tecnologias, diretrizes de fotos e parecer técnico de maturidade com nota 10.0.
 - **Botão Único de Transcrição Contextual (`v1.0.42`):** Remoção do botão redundante `⚡ Transcrever em Lote`. A barra de ferramentas agora conta exclusivamente com o botão **`⚡ Transcrever`**, que atua de forma direta sobre os itens selecionados na lista:
   - Se nenhum áudio estiver selecionado, exibe aviso amigável orientando o operador a selecionar;
@@ -477,16 +478,21 @@ Ao clicar no botão **"⚡ Transcrever com Whisper"** em qualquer áudio gravado
 
 ---
 
-## 📦 Executável Portátil para Outro Computador
+## 📦 Executável Portátil para Outro Computador e Release no GitHub
 
-A aplicação possui distribuição autossuficiente (standalone) com o modelo Whisper pré-instalado:
+A aplicação possui distribuição autossuficiente (standalone) com o modelo Whisper pré-instalado e publicação na nuvem via GitHub Releases:
 
-1. **Pasta do Executável:**
+1. **Repositório e Release no GitHub:**
+   - Repositório oficial: [https://github.com/Espaco-CMaker/transcricao-ambiental](https://github.com/Espaco-CMaker/transcricao-ambiental)
+   - Página da Release Oficial: [https://github.com/Espaco-CMaker/transcricao-ambiental/releases/tag/v1.0.42](https://github.com/Espaco-CMaker/transcricao-ambiental/releases/tag/v1.0.42)
+   - Link de Download Direto do ZIP (341.8 MB): [TranscricaoAmbiental_Portatil.zip](https://github.com/Espaco-CMaker/transcricao-ambiental/releases/download/v1.0.42/TranscricaoAmbiental_Portatil.zip)
+
+2. **Pasta do Executável Local:**
    - Localização: [dist/TranscricaoAmbiental/](file:///e:/IAGenMaster/2026/CMaker/Projetos/11-TranscricaoAmbiental/dist/TranscricaoAmbiental)
    - Executável direto: [TranscricaoAmbiental.exe](file:///e:/IAGenMaster/2026/CMaker/Projetos/11-TranscricaoAmbiental/dist/TranscricaoAmbiental/TranscricaoAmbiental.exe)
    - Atalho de execução: [Iniciar_Transcricao.bat](file:///e:/IAGenMaster/2026/CMaker/Projetos/11-TranscricaoAmbiental/dist/TranscricaoAmbiental/Iniciar_Transcricao.bat)
 
-2. **Arquivo Compactado para Transferência (Pen Drive / Nuvem):**
+3. **Arquivo Compactado Local:**
    - Arquivo: [dist/TranscricaoAmbiental_Portatil.zip](file:///e:/IAGenMaster/2026/CMaker/Projetos/11-TranscricaoAmbiental/dist/TranscricaoAmbiental_Portatil.zip)
 
 ---
@@ -532,11 +538,12 @@ A aplicação possui distribuição autossuficiente (standalone) com o modelo Wh
 
 ```
 11-TranscricaoAmbiental/
-├── README_IA.md               # Contexto executivo para agentes de IA (v1.0.7)
-├── README.md                  # Documentação completa para humanos (v1.0.7)
+├── .gitignore                 # Arquivo de exclusão de artefatos temporários e binários pesados
+├── README_IA.md               # Contexto executivo para agentes de IA (v1.0.44)
+├── README.md                  # Documentação completa para humanos (v1.0.44)
 ├── iniciar_sistema.bat        # Atalho direto para abrir via Python
 ├── dist/                      # Pasta contendo o executável compilado
-│   ├── TranscricaoAmbiental_Portatil.zip # Pacote ZIP completo para outro PC
+│   ├── TranscricaoAmbiental_Portatil.zip # Pacote ZIP completo para outro PC (341.8 MB)
 │   └── TranscricaoAmbiental/  # Pasta autossuficiente com o .exe
 │       ├── TranscricaoAmbiental.exe
 │       ├── Iniciar_Transcricao.bat
@@ -546,8 +553,12 @@ A aplicação possui distribuição autossuficiente (standalone) com o modelo Wh
 ├── transcricoes/              # Diretório padrão de Markdown (.md)
 ├── lixeira/                   # Diretório de retenção segura (sem hard delete)
 ├── data/                      # Arquivos de estado e configurações persistentes
+├── EmDesenvolvimento/         # Propostas e formulários em elaboração
+│   └── formulario_hub_projetos_v1.0.0.md # Dados canônicos para cadastro no Hub
 └── scripts/
     ├── gerar_executavel.py    # Script que recompila a distribuição (.exe)
+    ├── publish_release.py     # Publicação automatizada de releases e assets no GitHub
+    ├── push_github.bat        # Script para commit e push rápido no repositório
     ├── gui_app.py             # Aplicação Desktop nativa (CustomTkinter)
     ├── recorder.py            # Gravador resiliente e gerenciador de microfones
     ├── transcriber.py         # Motor Faster-Whisper de transcrição contínua
